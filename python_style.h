@@ -38,6 +38,12 @@ namespace python_style {
     void set(auto &obj, const auto &res){
         obj._set_(res);
     }
+  
+    // данная функция просит у объекта количество его содержимого используя его методы.
+    // actually types: variables, List
+    int len(auto &obj) {
+        return obj._len_();
+    }
 };
 
 
