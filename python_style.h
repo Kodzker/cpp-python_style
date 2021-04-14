@@ -1,4 +1,3 @@
-        obj._set_(args, length);
 //
 // Created by cyton_code on 11.04.2021.
 //
