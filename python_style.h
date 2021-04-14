@@ -14,13 +14,26 @@ namespace python_style {
     void print(const auto &obj){
         obj._print_();
     }
-  
-  
+    
+        
+        
+    //будет выглядить как то так: настоящая питоновская функция. для ее реализации мне нужно изучать:  https://metanit.com/cpp/c/5.13.php   https://ru.wikipedia.org/wiki/Вариативная_функция
+    // template<typename T> // 
+    // void print( T &obj, ...){
+    //     for i in args:
+    //        print(obj);
+    //        next();
+    // }
+// дело в том что тольько для этой функции ненужно знать настоящий тип обьекта. если мне от него нужно только вызвать его собственную функцию _print_()
+        
+        
+    
     // функции в питоне нет, я ее вскоре убери и заменю на ту функцию которая отвечает за :=
     void set( auto &obj, const auto args, const auto &length){
         obj._set_(args, length);
     }
   
+        
   
     //  функции в питоне нет, я ее вскоре убери и заменю на ту функцию которая отвечает за :=
     void set(auto &obj, const auto &res){
