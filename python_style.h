@@ -44,6 +44,15 @@ namespace python_style {
     int len(auto &obj) {
         return obj._len_();
     }
+  
+    void clear(auto &obj) { // удаление содержимого к обьекту
+        obj._clear_();
+    }
+
+    void del(auto &obj) { // вызов clear() и delete объекта
+        obj._del_();
+    }
+
 };
 
 
